@@ -54,7 +54,7 @@ The MePOS connect SDK has been tested with the latest MePOS 3 firmware.
 ## Use of the MePOS connect SDK on Windows
 **Version**
 
-The current Windows library version is 1.0.0, details of the latest changes are in the release notes bundled with
+The current Windows library version is 1.0.0. Details of the latest changes are in the release notes bundled with
 the Windows SDK.
 
 ## Libraries
@@ -79,7 +79,7 @@ The above code has now instantiated a MePOS object.
 ## MePOS SDK Methods
 Once a MePOS object has been created there are several methods that can be executed that perform actions on the MePOS unit. The method names, syntax and usage are identical across the Windows and Android platform.
 
-The MePOS methods will return 0 if successful or 1 there is no connection to the MePOS, it is possible to query the connection state of the MePOS using the MePOSConnectionManager before a command is sent. During the initialisation of the MePOSConnectionManager the status may briefly read -1.
+The MePOS methods will return 0 if successful or 1 if there is no connection to the MePOS, it is possible to query the connection state of the MePOS using the MePOSConnectionManager before a command is sent. During the initialisation of the MePOSConnectionManager the status may briefly read -1.
 
 **int setLedOneCol(Integer colour), int setLedTwoCol(Integer colour), int setLedThreeCol(Integer colour)**
 
@@ -137,7 +137,7 @@ The raw print command allows the user to send ESC POS commands directly to the p
 
 ## boolean printerBusy()
 
-Print commands are sent to the printer asynchronously, print or printRAW will return immediately to prevent locking the UI thread on a tablet device. To control the tablet UI and prevent possible print buffer overflow it is possible to monitor the printer busy status. New receipts cannot not be printed unless the printerBusy method returns false.
+Print commands are sent to the printer asynchronously, print or printRAW will return immediately to prevent locking the UI thread on a tablet device. To control the tablet UI and prevent possible print buffer overflow it is possible to monitor the printer busy status. New receipts cannot be printed unless the printerBusy method returns false.
 
 ##MePOSConnectionManager getConnectionManager()
 
@@ -166,7 +166,7 @@ Gets the current IP address setting for the connection manager.
 ## boolean MePOSConnectWiFi(String SSID, String IPAddress, String netmask, String encryption, String password)
 
 Connects the MePOS unit to a WiFi network as a client. After performing a Wi-Fi connection the setConnectionIPAddress method must be called with the provided static IP address or the assigned DHCP IP address using the MePOSGetAssignedIP() method. If the MePOS unit is being used as an access point, connecting to a Wi-Fi network will switch the MePOS to becoming a Wi-Fi client and the MePOS unit will no longer be a Wi-Fi access point. It is only possible to configure the WiFi module when the MePOS unit is
-plugged in via USB, a call to this method will return false if it is no USB connection is found.
+plugged in via USB, a call to this method will return false if is no USB connection is found.
 
 Valid input parameters are:
 
@@ -245,7 +245,7 @@ r.AddLine(new MePOSReceiptFeedLine(10);
 ## MePOSReceiptImageLine(Bitmap image)
 
 The image line can be used to print black and white raster graphics to the printer. The bitmap provided must be
-a valid android.graphics.Bitmap for Anroid or System.Drawing.Bitmap for Windows.
+a valid android.graphics.Bitmap.
 
 The following example shows how to add an image to a receipt:
 
