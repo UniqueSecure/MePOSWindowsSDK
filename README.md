@@ -9,7 +9,7 @@ your MePOS unit.
 
 ## Contents
 - [Supported tablet devices](#supported-mepos-devices)
-- [Supported MePOS devices](#supported-mepos-devices)
+- [Supported MePOS firmware](#supported-mepos-firmware)
 - [Use of the MePOS connect SDK on Windows](#use-of-the-mepos-connect-sdk-on-windows)
 - [MePOS SDK Methods](#mepos-sdk-methods)
 - [int setLedOneCol(Integer colour), int setLedTwoCol(Integer colour), int setLedThreeCol(Integer colour)](#)
