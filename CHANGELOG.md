@@ -1,14 +1,20 @@
 MePOS Windows SDK release notes
 ================================
 
+MePOS V1.1 Windows
+
+***(NEW) updated march 3, 2017***
+
+- Improved printing speed over Wifi
+
 MePOS V1.0.1 Windows
 --------------------
 ***updated May 5, 2016***
 
-- (NEW) Added methods enableUSB, disableUSB, enableWifi, disableWifi.
+- Added methods enableUSB, disableUSB, enableWifi, disableWifi.
 
 
-MePOS V1.5 Windows
+MePOS V1.0 Windows
 ------------------------------
 ***created april 06 2016***
 
