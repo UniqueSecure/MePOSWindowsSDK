@@ -53,7 +53,7 @@ your MePOS unit.
     - [String getSSID()](#string-getssid)
     - [String getRouterFirmware()](#string-getrouterfirmware)
 - [MePOSReceipt](#meposreceipt)
-    - [setCutType(int cutType)](#setcuttypeint cuttype)
+    - [setCutType(int cutType)](#setcuttypeint-cuttype)
     - [MePOSReceiptBarcodeLine(int type, String data)](#meposreceiptbarcodelineint-type-string-data)
     - [MePOSReceiptFeedLine(int lines)](#meposreceiptfeedlineint-lines)
     - [MePOSReceiptImageLine(Bitmap image)](#meposreceiptimagelinebitmap-image)
