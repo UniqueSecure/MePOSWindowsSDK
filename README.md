@@ -45,10 +45,10 @@ your MePOS unit.
     - [bool MePOSConnectEthernet(String ipAddress, String netmask, MePOSConfigurationCallback callback)](#bool-meposconnectethernetstring-ipaddress-string-netmask-meposconfigurationcallback-callback)
     - [bool MePOSConnectEthernet(MePOSConfigurationCallback callback)](#bool-meposconnectethernetmeposconfigurationcallback-callback)
     - [bool MePOSConnectEthernet()](#bool-meposconnectethernet)
-    - [boolean MePOSConnectWiFi(String SSID, String IPAddress, String netmask, String encryption, String password)](#bool-meposconnectwifistring-ssid-string-ipaddress-string-netmask-string-encryption-string-password)
+    - [bool MePOSConnectWiFi(String SSID, String IPAddress, String netmask, String encryption, String password)](#bool-meposconnectwifistring-ssid-string-ipaddress-string-netmask-string-encryption-string-password)
     - [bool MePOSConnectWiFi(String ssid, String ipAddress, String netmask, String encryption, String password, MePOSConfigurationCallback callback)](#bool-meposconnectwifistring-ssid-string-ipaddress-string-netmask-string-encryption-string-password-meposconfigurationcallback-callback)
-    - [boolean MePOSSetAccessPoint(String SSID, String encryption, String password)](#boolean-mepossetaccesspointstring-ssid-string-encryption-string-password)
-    - [bool MePOSSetAccessPoint(String ssid, String encryption, String password, MePOSConfigurationCallback callback)](#boolean-mepossetaccesspointstring-ssid-string-encryption-string-password-meposconfigurationcallback-callback)
+    - [bool MePOSSetAccessPoint(String SSID, String encryption, String password)](#bool-mepossetaccesspointstring-ssid-string-encryption-string-password)
+    - [bool MePOSSetAccessPoint(String ssid, String encryption, String password, MePOSConfigurationCallback callback)](#bool-mepossetaccesspointstring-ssid-string-encryption-string-password-meposconfigurationcallback-callback)
     - [String getMACAddress()](#string-getmacaddress)
     - [String getSSID()](#string-getssid)
     - [String getRouterFirmware()](#string-getrouterfirmware)
@@ -264,7 +264,7 @@ Same as `MePOSConnectEthernet(MePOSConnectionManager.IP_AS_DHCP, null, callback)
 ### bool MePOSConnectEthernet();
 Same as `MePOSConnectEthernet(MePOSConnectionManager.IP_AS_DHCP, null, null)`
 
-### boolean MePOSConnectWiFi(String SSID, String IPAddress, String netmask, String encryption, String password)
+### bool MePOSConnectWiFi(String SSID, String IPAddress, String netmask, String encryption, String password)
 
 Connects the MePOS unit to a WiFi network as a client. After performing a Wi-Fi connection the setConnectionIPAddress method must be called with the provided static IP address or the assigned DHCP IP address using the MePOSGetAssignedIP() method. If the MePOS unit is being used as an access point, connecting to a Wi-Fi network will switch the MePOS to becoming a Wi-Fi client and the MePOS unit will no longer be a Wi-Fi access point. It is only possible to configure the WiFi module when the MePOS unit is
 plugged in via USB, a call to this method will return false if is no USB connection is found.
@@ -287,7 +287,7 @@ encryption type was set to NONE.
 ### bool MePOSConnectWiFi(String ssid, String ipAddress, String netmask, String encryption, String password, MePOSConfigurationCallback callback);
 Same as `MePOSConnectWiFi(String ssid, String ipAddress, String netmask, String encryption, String password)` but adds a callback parameter to enable notification of configuration progress.
 
-### boolean MePOSSetAccessPoint(String SSID, String encryption, String password)
+### bool MePOSSetAccessPoint(String SSID, String encryption, String password)
 
 Sets the MePOS unit in to access point mode. When entering access point mode, the MePOS unit will create its own Wi-Fi network with the SSID, encryption and password provided. In access point mode the MePOS unit will create the IP network 192.168.16.0 and will get the IP address 192.168.16.254. Clients connecting to the
 MePOS unit will be automatically assigned IP addresses via DHCP. If the MePOS unit is connected to a Wi-Fi network as a client, setting the MePOS unit in access point mode will remove the MePOS unit from any Wi-Fi networks it is connected to in client mode. It is only possible to configure the WiFi module when the MePOS
