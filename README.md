@@ -63,6 +63,7 @@ your MePOS unit.
 - [Text style constants](#text-style-constants)
 - [Text size constants](#text-size-constants)
 - [Text position constants](#text-position-constants)
+- [Contact](#contact)
 
 
 ## Supported tablet devices
@@ -438,3 +439,7 @@ Some of the printer line commands accept a position constant. This can be any of
 - `MePOS.TEXT_POSITION_LEFT`
 - `MePOS.TEXT_POSITION_CENTER`
 - `MePOS.TEXT_POSITION_RIGHT`
+
+## Contact
+
+Please rise a ticket on [MePOS Support](https://mepos.zendesk.com/hc/en-us/requests/new)
