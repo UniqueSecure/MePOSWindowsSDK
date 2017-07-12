@@ -1,4 +1,4 @@
-# MePOS Connect windows SDK Guide V1.1
+# MePOS Connect windows SDK Guide V1.2
 
 The MePOS connect SDK is designed to allow communication from a tablet or Windows computer to the MePOS host
 unit. SDK libraries are currently available for Android and Windows.
