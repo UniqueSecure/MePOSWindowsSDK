@@ -81,7 +81,7 @@ the Windows SDK.
 
 ## Libraries
 The MePOS connect SDK for Windows currently includes one library.
-- meposconnect.dll
+- com.uniquesecure.meposconnect.dll
 
 The MePOS connect library is provided for Windows for use with in .NET code using Microsoft Visual studio.
 The MePOS connect library for windows is built using the Microsoft .NET framework 4.5.2. A future update will provide COM interoperability to allow legacy non .NET applications to use the library however as of version 1.1 this is not available.
