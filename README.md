@@ -210,7 +210,7 @@ Prints the configuration page of the thermal printer.
 
 ### String getFWVersion()
 
-Returns the firmware version of the MePOS
+Returns the firmware version of the MePOS. Throws MePOSException if failed.
 
 ### String getSerialNumber()
 
