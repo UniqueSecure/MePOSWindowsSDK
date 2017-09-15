@@ -442,7 +442,7 @@ Some of the printer line commands accept a position constant. This can be any of
 - `MePOS.TEXT_POSITION_RIGHT`
 
 ## MePOS PRO Emulator
-If you don't have a physicall MePOS PRO unit you can download the MePOS PRO Emulator [here](http://sdk.mepos.io/MePOSEmulator_v_0_3.zip)
+If you don't have a MePOS PRO unit you can download the MePOS PRO Emulator [here](http://sdk.mepos.io/MePOSEmulator_v_0_3.zip)
 
 ## Contact
 
