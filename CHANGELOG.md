@@ -1,9 +1,16 @@
 MePOS Windows SDK release notes
 ================================
 
+MePOS V1.3 Windows
+***(NEW)updated october 26, 2017***
+- Updated the API to reach the same level as MePOS Connect UWP.
+- Added support to generic EPOS-based printers.
+- Improved stability when printing and doing I/O changes such as cosmetic, diagnostic or cash drawer changes while printing a receipt.
+- Added: setFeedAfterCut() in the MePOSReceipt class to handle feed lines after a paper cut.
+
 MePOS V1.2 Windows
 --------------------
-***(NEW) updated july 12, 2017***
+***updated july 12, 2017***
 
 - Added support to currency symbols: Euro, Yen, Pound.
 
