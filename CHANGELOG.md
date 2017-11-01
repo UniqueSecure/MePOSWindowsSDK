@@ -1,8 +1,14 @@
 MePOS Windows SDK release notes
 ================================
 
+MePOS V1.3.1 Windows
+--------------------
+***updated november 1, 2017***
+- Improved stability on printer tasks.
+
 MePOS V1.3 Windows
-***(NEW)updated october 26, 2017***
+--------------------
+***updated october 26, 2017***
 - Updated the API to reach the same level as MePOS Connect UWP.
 - Added support to generic EPOS-based printers.
 - Improved stability when printing and doing I/O changes such as cosmetic, diagnostic or cash drawer changes while printing a receipt.

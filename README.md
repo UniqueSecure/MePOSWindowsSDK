@@ -1,4 +1,4 @@
-# MePOS Connect windows SDK Guide V1.3
+# MePOS Connect windows SDK Guide V1.3.1
 
 The MePOS connect SDK is designed to allow communication from a tablet or Windows computer to the MePOS host
 unit. SDK libraries are currently available for Android and Windows.
@@ -83,7 +83,7 @@ The MePOS connect SDK has been tested with the latest MePOS 3.1 firmware.
 ## Use of the MePOS connect SDK on Windows
 **Version**
 
-The current Windows library version is 1.3. Details of the latest changes are in the release notes bundled with
+The current Windows library version is 1.3.1. Details of the latest changes are in the release notes bundled with
 the Windows SDK.
 
 ## Libraries
