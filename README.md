@@ -1,4 +1,4 @@
-# MePOS Connect windows SDK Guide V1.3.1
+# MePOS Connect windows SDK Guide V1.4.1
 
 The MePOS connect SDK is designed to allow communication from a tablet or Windows computer to the MePOS host
 unit. SDK libraries are currently available for Android and Windows.
@@ -16,10 +16,12 @@ your MePOS unit.
 - [References](#references)
 - [Creating a new MePOS object](#creating-a-new-mepos-object)
 - [MePOS SDK Methods](#mepos-sdk-methods)
-    - [void enableWifi()](#void-enablewifi)
-    - [void disableWifi()](#void-disablewifi)
-    - [void enableUSB()](#void-enableusb)
-    - [void disableUSB()](#void-disableusb)
+    - [async Task enableWifi()](#async-task-enablewifi)
+    - [async Task disableWifi()](#async-task-disablewifi)
+    - [async Task enableUSB()](#async-task-enableusb)
+    - [async Task disableUSB()](#async-task-disableusb)
+    - [async Task enableCosmeticLEDButton()](#async-task-enablecosmeticledbutton)
+    - [async Task disableCosmeticLEDButton()](#async-task-disablecosmeticledbutton)
     - [async Task&lt;int&gt; cashDrawerStatus()](#async-taskint-cashdrawerstatus)
     - [async Task&lt;bool&gt; openCashDrawer()](#async-taskbool-opencashdrawer)
     - [async Task&lt;bool&gt; openCashDrawer(bool validateCashDrawerStatus)](#async-taskbool-opencashdrawerbool-validatecashdrawerstatus)
@@ -83,7 +85,7 @@ The MePOS connect SDK has been tested with the latest MePOS 3.1 firmware.
 ## Use of the MePOS connect SDK on Windows
 **Version**
 
-The current Windows library version is 1.3.1. Details of the latest changes are in the release notes bundled with
+The current Windows library version is 1.4.1. Details of the latest changes are in the release notes bundled with
 the Windows SDK.
 
 ## Libraries
@@ -116,21 +118,29 @@ Once a MePOS object has been created there are several methods that can be execu
 
 The MePOS methods will return true if successful or false if there is no connection to the MePOS.
 
-### void enableWifi()
+### async Task enableWifi()
 
 Enables the Wifi module on the MePOS device. This method is only available for **USB** and **WIFI** instances.
 
-### void disableWifi()
+### async Task disableWifi()
 
 Disables the Wifi module on the MePOS device. This method is only available for **USB** and **WIFI** instances.
 
-### void enableUSB()
+### async Task enableUSB()
 
 Enables the USB ports on the MePOS device. This method is only available for **USB** and **WIFI** instances.
 
-### void disableUSB()
+### async Task disableUSB()
 
 Disables the USB ports on the MePOS device. This method is only available for **USB** and **WIFI** instances.
+
+### async Task enableCosmeticLEDButton()
+
+Enables the Cosmetic LED rotating button. This method is only available for **USB** and **WIFI** instances.
+
+### async Task disableCosmeticLEDButton()
+
+Disables the Cosmetic LED rotating button. This method is only available for **USB** and **WIFI** instances.
 
 ### async Task&lt;int&gt; cashDrawerStatus()
 
